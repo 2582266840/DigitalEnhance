@@ -8,7 +8,8 @@ const service = axios.create({
   //https://www.fastmock.site/mock/c9b1a11d842a74bb76c5390162a2e387/dev-api
   //http://10.34.25.45:8080/api/admin
   //http://106.55.25.94:8080/api/admin
-  baseURL: 'http://106.55.25.94:8080/api',
+  // baseURL: 'http://106.55.25.94:8080/api',
+  baseURL: 'http://10.22.28.84:8000',
   // url = base url + request url
   // withCredentials: true, // send cookies when cross-domain requests
   timeout: 5000 // request timeout

@@ -1,11 +1,17 @@
 import request from '@/utils/request'
 
-export function getList() {
+export function getList(number,starTime,endTime,searchStr) {
     return request({
-        url: '/admin/courseClassList',
-        method: 'get'
+      url: '/admin/courseClassList',
+      method: 'get',
+      params:{
+        number:number,
+        starTime:starTime,
+        endTime:endTime,
+        searchStr:searchStr
+        }
     })
-}
+  }
 
 // 增加分类项
 export function addCourseList(data) {
